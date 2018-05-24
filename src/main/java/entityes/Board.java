@@ -10,7 +10,7 @@ public class Board {
     private String descData;
     private String desc;
 
-//    private List[] listOfBoards;
+    private List[] listOfBoards;
 
     public Board() {
     }
@@ -47,13 +47,13 @@ public class Board {
         this.desc = desc;
     }
 
-//    public List[] getListOfBoards() {
-//        return listOfBoards;
-//    }
-//
-//    public void setListOfBoards(List[] listOfBoards) {
-//        this.listOfBoards = listOfBoards;
-//    }
+    public List[] getListOfBoards() {
+        return listOfBoards;
+    }
+
+    public void setListOfBoards(List[] listOfBoards) {
+        this.listOfBoards = listOfBoards;
+    }
 
     @Override
     public String toString() {
@@ -62,6 +62,7 @@ public class Board {
                 ", id='" + id + '\'' +
                 ", descData='" + descData + '\'' +
                 ", desc='" + desc + '\'' +
-                '}'+"\n";
+                ", listOfBoards=" + Arrays.toString(listOfBoards) +
+                '}';
     }
 }
